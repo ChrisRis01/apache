@@ -1,0 +1,188 @@
+footer{
+    padding: 70px 0;
+    background-color: var(--secondary-color);
+}
+footer h2{
+    font-size: 40px;
+    text-align: center;
+}
+nav a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+}
+nav a:hover{
+    color: var(--text-color);
+}
+nav a::after{
+    content: '';
+    height: 3;
+    height: 2px;
+    width: 0%;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+p a{
+    color: var(--main-brand-color );
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+}
+p a:hover{
+    color: var(--text-color);
+}
+p a::after{
+    content: '';
+    height: 3;
+    height: 2px;
+    width: 0%;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+p a:hover::after{
+    width: 100%;
+}
+
+.logo_footer{
+    color: var(--main-brand-color);
+    font-size: 30px;
+}
+
+.grid_container{
+    margin: 60px auto;
+    width: 1500px;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+   grid-template-areas: 
+   "item1 item1 item2 item3"
+   "item4 item4 item2 item3";
+}
+.grid_item{
+    background-color: var(--light-secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+.grid_item img{
+    height: 150px;
+    width: 150px;
+}
+#item1{
+    grid-area: item1;
+    gap: 10px;
+    background-color: 	var(--primary-color); 
+}
+#item2{
+    grid-area: item2;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;   
+    background-color: 	var(--secondary-text-color); 
+
+}
+#item3{
+    grid-area: item3;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: 	var(--primary-color); 
+ 
+}
+#item4{
+    grid-area: item4;
+    background-color: 	var(--main-brand-color); 
+}
+@media(max-width: 1300px){
+    .grid_container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas: 
+        "item1 item1 item2"
+        "item4 item4 item2"
+        "item3 item3 item3";
+    }
+    #item3{
+        grid-area: item3;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+@media(max-width: 900px){
+    .grid_container{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "item1 item1"
+        "item4 item4"
+        "item2 item3"
+        "item2 item3";
+    }
+    #item3{
+        grid-area: item3;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media(max-width: 700px){
+    footer h2{
+        font-size: 7vw;
+    }
+    .logo_footer{
+        color: var(--main-brand-color);
+        font-size: 5vw;
+    }
+    .grid_item{
+        padding: 20px;
+    }
+    .grid_item img{
+        height: 10vw;
+        width: 10vw;
+    }
+    .grid_item h3{
+        font-size: 5vw;
+    }
+    .grid_item p{
+        font-size: 3vw;
+    }
+}
+nav2 a{
+    color: var(--main-brand-color);
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+}
+nav2 a:hover{
+    color: var(--text-color);
+}
+nav2 a::after{
+    content: '';
+    height: 3;
+    height: 2px;
+    width: 0%;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+nav2 a:hover::after{
+    width: 100%;
+}

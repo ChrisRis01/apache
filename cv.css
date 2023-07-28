@@ -1,0 +1,46 @@
+#cv_section{
+    padding: 100px 0;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap-reverse;
+}
+.cv_container{
+    width: 750px;
+    max-width: 90%;
+}
+.cv_container h2{
+    font-size: 50px;
+}
+.cv_container p{
+    text-align: justify;
+    line-height: 175%;
+}
+.cv_container h4{
+    color: var(--main-brand-color);
+    
+}
+.cv_container h5{
+    color: var(--secondary-text-color);
+}
+.logo_cv{
+    color: var(--main-brand-color);
+    font-size: 35px;
+}
+
+
+@media(max-width: 800px){
+    .cv_container{
+        padding: 50px 0;
+    }
+    .cv_container h2{
+        text-align: center;
+        font-size: 9vw;
+    }
+    .logo_cv{
+        color: var(--main-brand-color);
+        font-size: 7vw;
+    }
+}
